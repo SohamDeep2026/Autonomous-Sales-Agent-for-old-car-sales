@@ -17,13 +17,11 @@ Dependencies: streamlit, google.generativeai, dotenv, os, json, pandas
 
 import streamlit as st
 import google.generativeai as genai
-from dotenv import load_dotenv
-import os
 import json
 import pandas as pd
 
-load_dotenv()  # Loading all the environment variables from .env file
-API_KEY = os.getenv("API_KEY")  # Accessing the environment variables
+
+API_KEY = st.secrets['API_KEY'] # Accessing the API Key through streamlit secret
 
 genai.configure(api_key=f"{API_KEY}")  # Loading the API key into the generativeai module
 model = genai.GenerativeModel("gemini-1.5-flash")  # Initialize the model
