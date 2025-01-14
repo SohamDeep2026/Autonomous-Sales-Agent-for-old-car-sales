@@ -45,7 +45,6 @@ with open(file_path, mode='w', encoding='utf-8') as file:
 
 # Gathering the data, and selecting the relevant columns
 data = pd.read_csv("car_prices_OG.csv")
-data = data.iloc[:1000]
 selected_columns = ["year", "make", "model", "trim", "body", "transmission", "state", "condition", "mileage", "color",
                     "interior", "seller", "mmr"]
 for i in selected_columns:
