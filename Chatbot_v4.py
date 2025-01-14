@@ -1,3 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Filename: Chatbot_v4.py
+Author: SDeep
+Date: 2024-06-11
+Version: 1.0
+Description: 
+    I have created an Autonomous Sales Agent for old car sales leveraging Agentic AI, RAG, StreamLit.
+    The bot not only can return options for cars matching customer queries, but it can also negotiate 
+    with the customer on sales price and close the deal.
+License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+Contact: sohamddps@gmail.com
+Dependencies: streamlit, google.generativeai, dotenv, os, json, pandas
+"""
+
+
+
 import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
